@@ -20,11 +20,13 @@ $students=[
     'grade'=>'PHD'
   ],
 ];
+$count=0;
 ?>
 <div class="col-md-4 m-4">
   <table class="table table-striped table-bordered">
       <thead>
         <tr>
+          <td>id</td>
           <td>name</td>
           <td>grade</td>
         </tr>
@@ -32,6 +34,7 @@ $students=[
       <tbody>
         <?php foreach ($students as $student) {?> 
           <tr>
+            <td><?=++$count?></td>
             <td><?=$student['name']?></td>
             <td><?=$student['grade']?></td>
           </tr>
